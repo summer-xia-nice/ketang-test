@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品集 · 教育案例</title>
+  <style>
+    :root { color-scheme: dark; color: #eef7ff; background: #07101f; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 20% 10%, rgba(40, 161, 255, .14), transparent 24%), radial-gradient(circle at 90% 20%, rgba(98, 80, 255, .12), transparent 20%), #07101f; }
+    body, button, input, textarea { font: inherit; }
+    a { color: #7fd8ff; text-decoration: none; }
+    a:hover { color: #d2f4ff; }
+    header { padding: 22px 24px; display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+    .brand { font-size: 1rem; letter-spacing: .18em; text-transform: uppercase; color: #7fd8ff; }
+    nav { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+    .nav-link { color: #c4d8eb; transition: color .2s ease; }
+    .nav-link:hover { color: #fff; }
+    .hero { max-width: 1200px; margin: 0 auto; padding: 20px 24px 0; display: grid; gap: 24px; }
+    .hero h1 { margin: 0; font-size: clamp(2.4rem, 4vw, 4rem); line-height: 1.05; }
+    .hero p { margin: 16px 0 0; max-width: 760px; color: #a9bfda; line-height: 1.8; }
+    .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 24px; }
+    .button { padding: 14px 24px; background: linear-gradient(135deg, #20d0ff, #7d6cff); border: none; border-radius: 999px; color: #061828; font-weight: 700; cursor: pointer; transition: transform .2s ease, box-shadow .2s ease; }
+    .button:hover { transform: translateY(-2px); box-shadow: 0 18px 40px rgba(32,208,255,.18); }
+    .grid { display: grid; gap: 24px; padding: 0 24px 48px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); max-width: 1200px; margin: 0 auto; }
+    .card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.08); border-radius: 26px; overflow: hidden; box-shadow: 0 24px 80px rgba(0,0,0,.18); }
+    .card img { display: block; width: 100%; height: auto; object-fit: cover; }
+    .card-content { padding: 24px; }
+    .card-content h2 { margin: 0 0 14px; font-size: 1.5rem; color: #eff6ff; }
+    .card-content p { margin: 0 0 18px; color: #b2c5dd; line-height: 1.75; }
+    .pill { display: inline-flex; gap: 8px; align-items: center; padding: 10px 14px; border-radius: 999px; background: rgba(127, 216, 255, .12); color: #c6f2ff; font-size: .92rem; }
+    footer { max-width: 1200px; margin: 0 auto 40px; padding: 0 24px; color: #7b96b6; font-size: .95rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">AWww Portfolio</div>
+    <nav>
+      <a class="nav-link" href="index.html">首页</a>
+      <a class="nav-link" href="school.html">学校案例</a>
+      <a class="nav-link" href="contact.html">联系</a>
+    </nav>
+  </header>
+  <main class="hero">
+    <div>
+      <h1>教育类作品集展示</h1>
+      <p>这个页面展示了软性品牌内容、项目封面和案例说明，适合用作你的个人作品集中的“学校项目”板块。</p>
+      <div class="hero-buttons">
+        <a class="button" href="school.html">查看学校案例</a>
+        <a class="button" href="contact.html">获取项目支持</a>
+      </div>
+    </div>
+  </main>
+  <section class="grid">
+    <article class="card">
+      <img src="assets/covers/cover1.png" alt="School Case Study cover">
+      <div class="card-content">
+        <h2>宝山二中心小学品牌页</h2>
+        <p>整合公开信息与视觉节点，展示校区数据、特色课程与教育活动内容，形成一份可用于作品集演示的案例报道页。</p>
+        <span class="pill">教育案例</span>
+      </div>
+    </article>
+    <article class="card">
+      <img src="assets/covers/cover2.png" alt="Video Portfolio cover">
+      <div class="card-content">
+        <h2>视频封面模板</h2>
+        <p>展示作品视频封面风格，适合你的作品集项目页面，用于引导观众观看课程、活动或品牌片段。</p>
+        <span class="pill">封面设计</span>
+      </div>
+    </article>
+    <article class="card">
+      <img src="assets/covers/cover3.png" alt="Project Reel cover">
+      <div class="card-content">
+        <h2>视觉项目集锦</h2>
+        <p>将课程、活动、荣誉和师生动态以现代网页排版展示，并为以后导入真实素材留出动态图像区。</p>
+        <span class="pill">作品集</span>
+      </div>
+    </article>
+  </section>
+  <footer>当前说明页可直接用于你的作品集项目展示，后续可替换图片并添加更多案例。</footer>
+</body>
+</html>

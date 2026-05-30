@@ -5,69 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>动态粒子特效</title>
     <style>
-        /* 重置默认边距，隐藏滚动条，设置黑色背景 */
         body, html {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
             overflow: hidden;
-            background-color: #0f0f11;
+            background: radial-gradient(circle at top left, rgba(0, 255, 204, .18), transparent 28%), radial-gradient(circle at bottom right, rgba(32, 139, 255, .16), transparent 30%), #07101f;
+            color: #eef7ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         canvas {
             display: block;
         }
-        /* 添加一个居中的标题增加视觉效果（可选） */
+        .logo-container {
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            z-index: 10;
+        }
+        .logo-container img {
+            width: 120px;
+            height: auto;
+            display: block;
+        }
+        .nav {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            display: flex;
+            gap: 18px;
+            z-index: 10;
+        }
+        .nav a {
+            color: rgba(255,255,255,.78);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 14px;
+            border-radius: 999px;
+            transition: background .2s ease, color .2s ease;
+        }
+        .nav a:hover { background: rgba(255,255,255,.08); color: #fff; }
         .content {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: rgba(255, 255, 255, 0.9);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-align: center;
-            pointer-events: auto;
+            width: min(880px, calc(100% - 60px));
+            padding: 36px 40px;
             z-index: 5;
+            display: grid;
+            gap: 20px;
+            text-align: center;
+            background: rgba(9,16,29,.52);
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 30px;
+            backdrop-filter: blur(18px);
+            box-shadow: 0 30px 120px rgba(0,0,0,.28);
         }
-        h1 {
-            font-size: 3rem;
-            letter-spacing: 5px;
+        .content h1 {
             margin: 0;
+            font-size: clamp(2.6rem, 4vw, 4.2rem);
+            line-height: 1.02;
+            letter-spacing: .12em;
         }
-        p {
-            font-size: 1.2rem;
-            font-weight: 300;
+        .content p {
+            margin: 0;
+            color: #b6d2ea;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        .cta-group {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
         }
         .cta {
-            display: inline-block;
-            margin-top: 18px;
-            padding: 12px 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 180px;
+            padding: 16px 26px;
             border-radius: 999px;
-            background: rgba(0, 255, 204, 0.16);
-            border: 1px solid rgba(0, 255, 204, 0.35);
-            color: #e9fff6;
+            border: 1px solid rgba(255,255,255,.12);
+            background: rgba(0,255,204,.14);
+            color: #061828;
+            font-weight: 700;
+            text-decoration: none;
             transition: transform .2s ease, background .2s ease;
         }
-        .cta:hover {
-            transform: translateY(-2px);
-            background: rgba(0, 255, 204, 0.26);
-        }
-        .logo-container {
-            position: absolute;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            pointer-events: none;
-            z-index: 10;
-        }
-        .logo-container img {
-            width: 140px;
-            max-width: 90vw;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
+        .cta:hover { transform: translateY(-2px); background: rgba(0,255,204,.24); }
+        .secondary { background: rgba(255,255,255,.08); color: #eef7ff; }
+        .secondary:hover { background: rgba(255,255,255,.14); }
     </style>
 </head>
 <body>
@@ -76,10 +106,19 @@
         <img src="logo.png" alt="学校标志">
     </div>
 
+    <nav class="nav">
+        <a href="school.html">学校案例</a>
+        <a href="works.html">作品集</a>
+        <a href="contact.html">联系</a>
+    </nav>
+
     <div class="content">
-        <h1>PARTICLES</h1>
-        <p>移动鼠标与粒子互动</p>
-        <a class="cta" href="school.html">查看学校案例</a>
+        <h1>为教育项目打造高级展示页</h1>
+        <p>你的作品集首页现在已连接到学校案例与作品页，设计保留了动态粒子效果，同时提供更清晰的入口与品牌导航。</p>
+        <div class="cta-group">
+            <a class="cta" href="school.html">查看学校案例</a>
+            <a class="cta secondary" href="works.html">浏览作品集</a>
+        </div>
     </div>
 
     <canvas id="particleCanvas"></canvas>

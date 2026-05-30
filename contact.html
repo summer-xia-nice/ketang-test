@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系 · 作品集</title>
+  <style>
+    :root { color-scheme: dark; color: #eef7ff; background: #08101d; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 90% 10%, rgba(86, 143, 255, .14), transparent 22%), radial-gradient(circle at 10% 80%, rgba(0, 217, 159, .1), transparent 18%), #08101d; }
+    a { color: #84d9ff; text-decoration: none; }
+    header { padding: 22px 24px; display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+    .brand { font-size: 1rem; letter-spacing: .18em; text-transform: uppercase; color: #84d9ff; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    .nav-link { color: #c4d8eb; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 24px; }
+    .hero { padding: 40px 0 20px; }
+    .hero h1 { margin: 0; font-size: clamp(2.4rem, 4vw, 3.6rem); line-height: 1.05; }
+    .hero p { margin: 18px 0 0; color: #a7bcd3; line-height: 1.85; max-width: 720px; }
+    .content { display: grid; gap: 24px; grid-template-columns: 1.2fr .8fr; }
+    .form-card, .info-card { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08); border-radius: 28px; padding: 28px; box-shadow: 0 24px 70px rgba(0,0,0,.18); }
+    .form-card h2, .info-card h2 { margin-top: 0; }
+    .form-group { display: grid; gap: 12px; margin-bottom: 18px; }
+    label { color: #c6def7; font-size: .95rem; }
+    input, textarea { width: 100%; border: 1px solid rgba(255,255,255,.14); border-radius: 16px; padding: 14px 16px; background: rgba(255,255,255,.03); color: #eef7ff; outline: none; }
+    input::placeholder, textarea::placeholder { color: #8fa7bf; }
+    textarea { min-height: 184px; resize: vertical; }
+    .submit { border: none; border-radius: 999px; padding: 14px 26px; background: linear-gradient(135deg, #1de1b2, #64b0ff); color: #08101d; font-weight: 700; cursor: pointer; transition: transform .2s ease; }
+    .submit:hover { transform: translateY(-2px); }
+    .info-card p { color: #bbe0ff; line-height: 1.75; }
+    .info-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 18px; }
+    .info-icon { min-width: 38px; min-height: 38px; background: rgba(127, 216, 255, .12); border-radius: 50%; display: grid; place-items: center; color: #84d9ff; }
+    .info-body { color: #c8dff4; }
+    .info-body strong { display: block; margin-bottom: 4px; }
+    footer { margin-top: 34px; color: #7d9db9; font-size: .95rem; }
+    @media (max-width: 900px) { .content { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">AWww Portfolio</div>
+    <nav>
+      <a class="nav-link" href="index.html">首页</a>
+      <a class="nav-link" href="works.html">作品</a>
+      <a class="nav-link" href="school.html">学校案例</a>
+    </nav>
+  </header>
+  <div class="container">
+    <section class="hero">
+      <h1>联系我，开启下一个教育项目</h1>
+      <p>如果你希望把宝山区第二中心小学这样的教育项目转化为作品集展示页，我可以继续为你设计视觉页、活动页与招生页。</p>
+    </section>
+    <div class="content">
+      <article class="form-card">
+        <h2>项目咨询</h2>
+        <div class="form-group">
+          <label for="name">姓名</label>
+          <input id="name" type="text" placeholder="请输入你的名字">
+        </div>
+        <div class="form-group">
+          <label for="email">邮箱</label>
+          <input id="email" type="email" placeholder="hello@example.com">
+        </div>
+        <div class="form-group">
+          <label for="project">项目描述</label>
+          <textarea id="project" placeholder="输入你想展示的资料类型，比如视频封面、作品链接、校园活动等。"></textarea>
+        </div>
+        <button class="submit">发送咨询</button>
+      </article>
+      <aside class="info-card">
+        <h2>快速信息</h2>
+        <div class="info-item">
+          <span class="info-icon">📍</span>
+          <div class="info-body"><strong>项目目标</strong>打造 Awwwards 水平的教育品牌与作品集展示页。</div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">🎥</span>
+          <div class="info-body"><strong>素材整合</strong>已准备学校资料、logo、视频封面占位图与案例页面。</div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">🛠️</span>
+          <div class="info-body"><strong>后续扩展</strong>可继续补充项目页面、作品库、真实封面图与互动动画。</div>
+        </div>
+      </aside>
+    </div>
+    <footer>页面仅为视觉展示原型；如果需要我可以继续整合你的本地素材文件夹内容。</footer>
+  </div>
+</body>
+</html>

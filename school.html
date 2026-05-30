@@ -17,6 +17,9 @@
     a:hover { color: #c8f1ff; }
     header { padding: 40px 24px 24px; max-width: 1200px; margin: 0 auto; }
     header .topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .page-nav { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 4px; }
+    .page-nav a { color: #7fd8ff; background: rgba(255,255,255,.05); padding: 10px 16px; border-radius: 999px; border: 1px solid rgba(127,216,255,.12); transition: background .2s ease, color .2s ease; }
+    .page-nav a:hover { background: rgba(127,216,255,.15); color: #eef7ff; }
     header h1 { margin: 0; font-size: clamp(2.4rem, 3.4vw, 4rem); letter-spacing: 0.06em; line-height: 1.05; }
     header p { margin: 12px 0 0; max-width: 840px; color: #c4d8eb; font-size: 1rem; }
     .hero { display: grid; gap: 24px; max-width: 1200px; margin: 0 auto; padding: 0 24px 24px; grid-template-columns: minmax(0, 1.2fr) minmax(320px, .8fr); align-items: center; }
@@ -54,7 +57,11 @@
       <div>
         <p class="badge">学校品牌页面 • 公办小学 • 资料汇总</p>
       </div>
-      <div><a href="index.html">返回粒子演示</a></div>
+      <div class="page-nav">
+        <a href="index.html">返回首页</a>
+        <a href="works.html">作品集</a>
+        <a href="contact.html">联系</a>
+      </div>
     </div>
     <h1>宝山区第二中心小学</h1>
     <p>为你的作品集提供真实学校案例展示，已整合公开校区地址、联系方式、特色课程与最新教育动态。</p>
