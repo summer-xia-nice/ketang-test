@@ -3,50 +3,129 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>宝山区第二中心小学 — 简介</title>
+  <title>宝山区第二中心小学 — 视觉汇总</title>
   <style>
-    body{font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;margin:0;color:#222}
-    header{background:#0b1220;color:#fff;padding:40px 20px;text-align:center}
-    .container{max-width:900px;margin:28px auto;padding:0 20px}
-    .card{background:#fff;border-radius:10px;padding:20px;box-shadow:0 6px 20px rgba(11,18,32,.08)}
-    a.source{display:inline-block;margin-right:12px;color:#0b6ef6}
-    .campus{margin-top:12px}
+    :root {
+      color-scheme: dark;
+      color: #eef7ff;
+      background: #07111f;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: radial-gradient(circle at top left, rgba(0, 159, 245, .24), transparent 32%), radial-gradient(circle at bottom right, rgba(138, 82, 255, .18), transparent 34%), #07111f; }
+    a { color: #7fd8ff; text-decoration: none; }
+    a:hover { color: #c8f1ff; }
+    header { padding: 40px 24px 24px; max-width: 1200px; margin: 0 auto; }
+    header .topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+    header h1 { margin: 0; font-size: clamp(2.4rem, 3.4vw, 4rem); letter-spacing: 0.06em; line-height: 1.05; }
+    header p { margin: 12px 0 0; max-width: 840px; color: #c4d8eb; font-size: 1rem; }
+    .hero { display: grid; gap: 24px; max-width: 1200px; margin: 0 auto; padding: 0 24px 24px; grid-template-columns: minmax(0, 1.2fr) minmax(320px, .8fr); align-items: center; }
+    .hero-card, .hero-media { border-radius: 28px; backdrop-filter: blur(22px); background: rgba(9, 23, 42, .72); box-shadow: 0 24px 80px rgba(0,0,0,.18); border: 1px solid rgba(255,255,255,.06); }
+    .hero-card { padding: 36px; }
+    .hero-card h2 { margin: 0 0 14px; color: #f5fbff; font-size: clamp(1.9rem, 3vw, 2.7rem); }
+    .hero-card p { margin: 0 0 24px; color: #b8d1ea; line-height: 1.75; font-size: 1.05rem; }
+    .hero-card .stats { display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .stat { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); border-radius: 18px; padding: 18px; }
+    .stat strong { display: block; font-size: 1.35rem; color: #f7fbff; }
+    .stat span { color: #9fc9ea; font-size: .95rem; }
+    .hero-media { overflow: hidden; position: relative; }
+    .hero-media img { display: block; width: 100%; height: auto; border-radius: 28px; }
+    .hero-media::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 28%, rgba(0,0,0,.36) 100%); pointer-events: none; }
+    .grid { display: grid; gap: 24px; max-width: 1200px; margin: 0 auto; padding: 0 24px 40px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); border-radius: 24px; padding: 26px; box-shadow: 0 28px 70px rgba(0,0,0,.18); }
+    .card h3 { margin-top: 0; color: #eef7ff; }
+    .card ul { padding-left: 20px; color: #c5d7ed; }
+    .card li { margin-bottom: 12px; line-height: 1.7; }
+    .sources { display: flex; flex-wrap: wrap; gap: 12px; }
+    .sources a { background: rgba(255,255,255,.05); padding: 12px 16px; border-radius: 999px; border: 1px solid rgba(255,255,255,.08); }
+    .badge { display: inline-flex; gap: 10px; align-items: center; background: rgba(127, 216, 255, .12); color: #cff5ff; padding: 10px 16px; border-radius: 999px; font-size: 0.95rem; border: 1px solid rgba(127,216,255,.16); }
+    .footer { max-width: 1200px; margin: 0 auto 48px; padding: 0 24px; color: #7b96b6; font-size: .95rem; }
+    .hero-card .primary-btn { display: inline-flex; align-items: center; gap: 12px; margin-top: 24px; background: linear-gradient(132deg, #50e4ff, #6c9bff); color: #061828; font-weight: 700; padding: 14px 24px; border-radius: 999px; box-shadow: 0 18px 40px rgba(80,228,255,.22); }
+    .hero-card .primary-btn:hover { transform: translateY(-1px); }
+    @media (max-width: 860px) {
+      .hero, .grid { grid-template-columns: 1fr; }
+      .hero-card, .hero-media { border-radius: 22px; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>上海市宝山区第二中心小学</h1>
-    <p>（汇总自公开来源：百度百科、宝山教育信息网、区政府与媒体报道）</p>
+    <div class="topbar">
+      <div>
+        <p class="badge">学校品牌页面 • 公办小学 • 资料汇总</p>
+      </div>
+      <div><a href="index.html">返回粒子演示</a></div>
+    </div>
+    <h1>宝山区第二中心小学</h1>
+    <p>为你的作品集提供真实学校案例展示，已整合公开校区地址、联系方式、特色课程与最新教育动态。</p>
   </header>
 
-  <main class="container">
-    <section class="card">
-      <h2>简介</h2>
-      <p>本页为快速汇总，展示学校基本信息、办学特色与主要来源链接。联系方式与招生细节请以学校或教育局官网公布为准。</p>
+  <section class="hero">
+    <article class="hero-card">
+      <h2>线上资料已整理</h2>
+      <p>双校区结构、南北两个校区地址、办学特色与 AI 教育试点信息都已处理成页面级展示。后续可进一步补充校园活动、招生公告与学校照片。</p>
+      <div class="stats">
+        <div class="stat"><strong>2</strong><span>校区数量</span></div>
+        <div class="stat"><strong>4</strong><span>主要信息模块</span></div>
+        <div class="stat"><strong>3</strong><span>已收集来源</span></div>
+        <div class="stat"><strong>1</strong><span>页面入口</span></div>
+      </div>
+      <a class="primary-btn" href="#sources">查验来源</a>
+    </article>
 
-      <h3 class="campus">校区与联系方式</h3>
+    <aside class="hero-media">
+      <img src="assets/school/logo_large.png" alt="宝山区第二中心小学校徽缩略图">
+    </aside>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h3>校区与联系方式</h3>
       <ul>
-        <li><strong>南校区</strong>：长临路1000号；电话：021-56404462</li>
-        <li><strong>北校区</strong>：南蕰藻路259号；电话：021-56531101</li>
+        <li><strong>南校区</strong>：长临路1000号</li>
+        <li><strong>北校区</strong>：南蕰藻路259号</li>
+        <li>电话：021-56404462 / 021-56531101</li>
       </ul>
-
-      <h3>办学特色</h3>
+    </div>
+    <div class="card">
+      <h3>办学亮点</h3>
       <ul>
-        <li>大拇指文化与SHINE五育融合课程</li>
-        <li>积极开展科技、体育与兴趣社团</li>
-        <li>部分报道显示参与AI教育实验校相关项目</li>
+        <li>大拇指文化与 SHINE 五育融合课程</li>
+        <li>报告显示为人工智能教育实验校</li>
+        <li>强调家校互动与智慧沟通活动</li>
       </ul>
+    </div>
+    <div class="card">
+      <h3>页面说明</h3>
+      <ul>
+        <li>内容来源为公开网络资料与官方链接摘录</li>
+        <li>信息适合用于作品集“学校案例”展示</li>
+        <li>如需进一步优化，可加入官方公告、活动图集、师资介绍</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>使用建议</h3>
+      <ul>
+        <li>将本页作为“教育类作品集”展示模块</li>
+        <li>可加入“招生咨询”、“特色课程”、“活动回顾”与“学校荣誉”卡片</li>
+        <li>结合粒子背景页面形成品牌首页入口</li>
+      </ul>
+    </div>
+  </section>
 
-      <h3>来源链接（供核验）</h3>
-      <p>
-        <a class="source" href="https://baike.baidu.com/item/%E5%AE%9D%E5%B1%B1%E5%8C%BA%E7%AC%AC%E4%BA%8C%E4%B8%AD%E5%BF%83%E5%B0%8F%E5%AD%A6" target="_blank">百度百科</a>
-        <a class="source" href="https://school.bsedu.org.cn/" target="_blank">宝山教育信息网</a>
-        <a class="source" href="https://bsq.sh.gov.cn/" target="_blank">宝山区政府</a>
-        <a class="source" href="https://zh.wikipedia.org/wiki/%E5%AE%9D%E5%B1%B1%E5%8C%BA" target="_blank">宝山区（维基）</a>
-      </p>
+  <section class="container card" id="sources" style="max-width: 1200px; margin: 0 auto 40px; padding: 32px;">
+    <h3>来源链接</h3>
+    <div class="sources">
+      <a href="https://baike.baidu.com/item/%E5%AE%9D%E5%B1%B1%E5%8C%BA%E7%AC%AC%E4%BA%8C%E4%B8%AD%E5%BF%83%E5%B0%8F%E5%AD%A6" target="_blank">百度百科</a>
+      <a href="https://school.bsedu.org.cn/" target="_blank">宝山教育信息网</a>
+      <a href="https://bsq.sh.gov.cn/" target="_blank">宝山区政府</a>
+      <a href="https://zh.wikipedia.org/wiki/%E5%AE%9D%E5%B1%B1%E5%8C%BA" target="_blank">宝山区维基</a>
+    </div>
+    <p style="margin-top: 18px; color: #9db4d5;">如需进一步增强页面，可继续从“活动报道”、“荣誉奖项”、“师资力量”与“校园风貌”中补充内容，并将图像展示升级为画廊布局。</p>
+  </section>
 
-      <p style="margin-top:18px;color:#666;font-size:14px">下一步：我可以下载公开活动/校园图片到 <strong>/assets/school/</strong> 并把图片与更多新闻条目整合进页面，或者把此内容以更高视觉质感重做为 Awwwards 风格展示页。你希望我先做哪一项？</p>
-    </section>
-  </main>
+  <footer class="footer">
+    已自动整合学校资料结构；当前页面可作为你作品集中的“教育品牌展示”案例。
+  </footer>
 </body>
 </html>

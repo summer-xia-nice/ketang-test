@@ -23,10 +23,11 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.9);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
-            pointer-events: none; /* 让鼠标事件穿透文本，不影响粒子互动 */
+            pointer-events: auto;
+            z-index: 5;
         }
         h1 {
             font-size: 3rem;
@@ -36,6 +37,20 @@
         p {
             font-size: 1.2rem;
             font-weight: 300;
+        }
+        .cta {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 12px 24px;
+            border-radius: 999px;
+            background: rgba(0, 255, 204, 0.16);
+            border: 1px solid rgba(0, 255, 204, 0.35);
+            color: #e9fff6;
+            transition: transform .2s ease, background .2s ease;
+        }
+        .cta:hover {
+            transform: translateY(-2px);
+            background: rgba(0, 255, 204, 0.26);
         }
         .logo-container {
             position: absolute;
@@ -64,6 +79,7 @@
     <div class="content">
         <h1>PARTICLES</h1>
         <p>移动鼠标与粒子互动</p>
+        <a class="cta" href="school.html">查看学校案例</a>
     </div>
 
     <canvas id="particleCanvas"></canvas>
