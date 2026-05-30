@@ -37,9 +37,29 @@
             font-size: 1.2rem;
             font-weight: 300;
         }
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            pointer-events: none;
+            z-index: 10;
+        }
+        .logo-container img {
+            width: 140px;
+            max-width: 90vw;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
+
+    <div class="logo-container">
+        <img src="logo.png" alt="学校标志">
+    </div>
 
     <div class="content">
         <h1>PARTICLES</h1>
