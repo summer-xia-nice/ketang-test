@@ -6,9 +6,9 @@ OUT_DIR = os.path.join(ROOT, 'assets', 'covers')
 os.makedirs(OUT_DIR, exist_ok=True)
 
 images = [
-    {'name': 'cover1.png', 'title': 'School Case Study', 'subtitle': '宝山二中心小学品牌页', 'accent': (37, 160, 249)},
-    {'name': 'cover2.png', 'title': 'Video Portfolio', 'subtitle': '视频封面展示', 'accent': (122, 90, 255)},
-    {'name': 'cover3.png', 'title': 'Project Reel', 'subtitle': '作品集视觉模板', 'accent': (0, 209, 164)},
+    {'name': 'cover1.png', 'title': '学校案例研究', 'subtitle': '宝山二中心小学品牌页', 'accent': (37, 160, 249)},
+    {'name': 'cover2.png', 'title': '视频展示封面', 'subtitle': '视频封面展示', 'accent': (122, 90, 255)},
+    {'name': 'cover3.png', 'title': '项目视觉集锦', 'subtitle': '作品集视觉模板', 'accent': (0, 209, 164)},
 ]
 
 for item in images:
@@ -46,7 +46,7 @@ for item in images:
     draw.text((110, 280), title, font=font_large, fill=(255, 255, 255, 255))
     draw.text((110, 380), subtitle, font=font_small, fill=(205, 225, 245, 255))
 
-    badge_text = '2026 Creative Demo'
+    badge_text = '创意演示'
     if hasattr(draw, 'textbbox'):
         bbox = draw.textbbox((0, 0), badge_text, font=font_small)
         badge_w = bbox[2] - bbox[0]
