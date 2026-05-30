@@ -1,0 +1,32 @@
+{
+  "name": "上海市宝山区第二中心小学",
+  "summary": "公办小学，前身为庙行镇中心校，2008年更名；现有南、北两个校区，教学与特色课程较强。",
+  "campuses": [
+    {
+      "name": "南校区",
+      "address": "长临路1000号",
+      "phone": "021-56404462"
+    },
+    {
+      "name": "北校区",
+      "address": "南蕰藻路259号",
+      "phone": "021-56531101"
+    }
+  ],
+  "features": [
+    "大拇指文化特色课程",
+    "SHINE五育融合课程",
+    "人工智能教育实验校（部分报道与资料显示）",
+    "丰富的社团与体育/科技活动"
+  ],
+  "honors_examples": [
+    "市/区级示范校与教育类荣誉（报道汇总）"
+  ],
+  "notes": "信息来自公开来源（百度百科、区教育信息网、政府/媒体报道）；联系方式与招生细节建议以官网或教育局公布为准。",
+  "sources": [
+    "https://baike.baidu.com/item/%E5%AE%9D%E5%B1%B1%E5%8C%BA%E7%AC%AC%E4%BA%8C%E4%B8%AD%E5%BF%83%E5%B0%8F%E5%AD%A6",
+    "https://school.bsedu.org.cn/",
+    "https://bsq.sh.gov.cn/",
+    "https://zh.wikipedia.org/wiki/%E5%AE%9D%E5%B1%B1%E5%8C%BA"
+  ]
+}
